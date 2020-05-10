@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="370.0" maxWidth="600.0" prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="br.com.poli.projetoXerox.Interface.CriarContaAlunoController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Imagens/wall.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="bConfirmar" ellipsisString="" layoutX="263.0" layoutY="325.0" mnemonicParsing="false" onAction="#actionGoFoward" prefHeight="30.0" prefWidth="73.0" text="OK" textOverrun="LEADING_ELLIPSIS" />
+      <TextField fx:id="txtLogin" layoutX="98.0" layoutY="145.0" prefHeight="25.0" prefWidth="168.0" promptText="Neymar" />
+      <Text layoutX="209.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X E R O X">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <Text layoutX="83.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor, digite seu nome">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="336.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Em seguida, digite seu CPF">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="400.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© eComp POLI/UPE Developments" />
+      <Text layoutX="277.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cadastro" />
+      <CheckBox fx:id="checkLi" layoutX="193.0" layoutY="271.0" mnemonicParsing="false" text="Li e concordo com os termos de uso" />
+      <Label fx:id="aceitarTermos" layoutX="182.0" layoutY="288.0" prefHeight="17.0" prefWidth="281.0" />
+      <Button fx:id="bVoltar" ellipsisString="" layoutX="17.0" layoutY="14.0" mnemonicParsing="false" onAction="#actionReturn" prefHeight="17.0" prefWidth="73.0" text="Voltar" />
+      <PasswordField fx:id="txtSenha" layoutX="216.0" layoutY="227.0" prefHeight="25.0" prefWidth="168.0" promptText="45623513132" />
+      <Text layoutX="208.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por fim, digite uma senha">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCPF" layoutX="353.0" layoutY="145.0" prefHeight="25.0" prefWidth="168.0" promptText="9673498761" />
+      <Button fx:id="termosUso" layoutX="419.0" layoutY="267.0" mnemonicParsing="false" onAction="#abrirTermos" prefHeight="5.0" prefWidth="37.0" text="Ler " />
+   </children>
+</AnchorPane>

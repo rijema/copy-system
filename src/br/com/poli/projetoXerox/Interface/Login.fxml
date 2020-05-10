@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="370.0" maxWidth="600.0" prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.projetoXerox.Interface.LoginController">
+   <children>
+       <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Imagens/wall.jpg" />
+         </image>
+      </ImageView>
+      
+      <Button fx:id="bConfirmar" ellipsisString="" layoutX="420.0" layoutY="180.0" mnemonicParsing="false" onAction="#cOK" prefHeight="30.0" prefWidth="73.0" text="OK" textOverrun="LEADING_ELLIPSIS" />
+      <PasswordField fx:id="txtSenha" layoutX="210.0" layoutY="204.0" prefHeight="25.0" prefWidth="182.0" promptText="Hexadecimal" />
+      <TextField fx:id="txtLogin" layoutX="209.0" layoutY="155.0" prefHeight="25.0" prefWidth="182.0" promptText="Nome + CPF" />
+      <Text layoutX="133.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="131.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="400.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© eComp POLI/UPE Developments" />
+      <Button fx:id="bCriarConta" layoutX="114.0" layoutY="302.0" mnemonicParsing="false" onAction="#cCriarContabCriarContaProfessor" prefHeight="25.0" prefWidth="168.0" text="Cria Conta - Professor" />
+      <Button fx:id="bCriarConta1" layoutX="325.0" layoutY="302.0" mnemonicParsing="false" onAction="#cCriarContabCriarContaAluno" prefHeight="25.0" prefWidth="168.0" text="Cria Conta - Aluno" />
+      <ComboBox fx:id="categorias" layoutX="237.0" layoutY="114.0" prefHeight="25.0" prefWidth="125.0" />
+      <Text fx:id="texto" layoutX="203.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema de Gerenciamento de Cópias" />
+      <Button fx:id="bEsqueceuSenha" layoutX="216.0" layoutY="254.0" mnemonicParsing="false" onAction="#cEsqueceuSenha" prefHeight="25.0" prefWidth="168.0" text="Esqueci minha senha" textOverrun="LEADING_ELLIPSIS" />
+      <Text layoutX="219.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STARK">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="82.0" fitWidth="87.0" layoutX="261.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Stark%20-%20SGC/imagens/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="30.0" layoutX="168.0" layoutY="141.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Imagens/iconUser.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="23.0" layoutX="172.0" layoutY="193.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Imagens/iconPassword.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
